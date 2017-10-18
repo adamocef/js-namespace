@@ -11,8 +11,8 @@ var CEFA0007 = {
         myBox.appendChild(adamoDiv);
     },
     boxClicked : function (ev) {
-        ev.currentTarget.style.borderColor = "#FF1D00";
-        ev.currentTarget.style.backgroundColor = "#06FF00";
+        ev.currentTarget.style.borderColor = "#00DE00";
+        ev.currentTarget.style.backgroundColor = "#FF5543";
     },
     boxMouseOver: function (ev) {
         ev.currentTarget.classList.toggle("highlight");

@@ -1,1 +1,1 @@
-# js-namespace
+ js-namespace
