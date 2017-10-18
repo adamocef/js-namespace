@@ -1,26 +1,24 @@
-var cefa0007 = {
+var Cefa0007 = {
+
     init: function () {
-        var adamoDiv = document.createElement("div");
-        adamoDiv.classList.add("box");
-        adamoDiv.textContent = "cefa0007";
-        var myBox = document.querySelector("#boxes");
-        adamoDiv.addEventListener("click",cefa0007.boxClicked);
-        adamoDiv.addEventListener("mouseover",cefa0007.boxMouseOver);
-        adamoDiv.addEventListener("mouseout",cefa0007.boxMouseOut);
+
+    var box = document.createElement("div");
+    box.className = "box";
+    box.textContent = "cefa0007";
+    document.getElementById("boxes").appendChild(box);
+
+    box.addEventListener("mouseover", Cefa0007.mouse);
+    box.addEventListener("mouseout", Cefa0007.mouse);
+    box.addEventListener("click", Cefa0007.click) 
+    },
+
+    mouse: function(ev){
+    ev.currentTarget.classList.toggle("highlight");
+    },
         
-        myBox.appendChild(adamoDiv);
+    click: function(ev){
+    ev.currentTarget.style.backgroundColor = "green";
+    ev.currentTarget.style.borderColor = "blue";
     },
-    boxClicked : function (ev) {
-        ev.currentTarget.style.borderColor = "blue";
-        ev.currentTarget.style.backgroundColor = "green";
-    },
-    boxMouseOver: function (ev) {
-        ev.currentTarget.classList.toggle("highlight");
-    },
-    boxMouseOut: function (ev) {
-        ev.currentTarget.classList.toggle("highlight");
-    }
-}
-
-
-
+    
+    };
