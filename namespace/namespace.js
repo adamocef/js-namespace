@@ -1,9 +1,9 @@
 var CEFA0007 = {
     init: function () {
-        var adamoDiv = document.createElement("div");
+        let adamoDiv = document.createElement("div");
         adamoDiv.classList.add("box");
-        adamoDiv.textContent = "cefa0007";
-        var myBox = document.querySelector("#boxes");
+        adamoDiv.textContent = "CEFA0007";
+        let myBox = document.querySelector("#boxes");
         adamoDiv.addEventListener("click",CEFA0007.boxClicked);
         adamoDiv.addEventListener("mouseover",CEFA0007.boxMouseOver);
         adamoDiv.addEventListener("mouseout",CEFA0007.boxMouseOut);
