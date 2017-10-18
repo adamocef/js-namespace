@@ -2,7 +2,7 @@ var CEFA0007 = {
     init: function () {
         let adamoDiv = document.createElement("div");
         adamoDiv.classList.add("box");
-        adamoDiv.textContent = "CEFA0007";
+        adamoDiv.textContent = "cefa0007";
         let myBox = document.querySelector("#boxes");
         adamoDiv.addEventListener("click",CEFA0007.boxClicked);
         adamoDiv.addEventListener("mouseover",CEFA0007.boxMouseOver);
